@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -35,7 +34,7 @@ function DropdownFixedNavbar() {
               caret
               tag="a"
               data-toggle="dropdown"
-              href="#pablo"
+              href="/"
               id="navbarDropdown"
               onClick={(e) => e.preventDefault()}
             >
@@ -44,23 +43,18 @@ function DropdownFixedNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header>Dropdown header</DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Action
+              <DropdownItem header>My Links</DropdownItem>
+              <DropdownItem
+                href="https://github.com/Bri997"
+                onClick={(e) => e.preventDefault()}
+              >
+                GitHub
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Another action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Something else here
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Separated link
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                One more separated link
+              <DropdownItem
+                href="https://www.linkedin.com/in/bmusial/"
+                onClick={(e) => e.preventDefault()}
+              >
+                LinkedIn
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
@@ -87,43 +81,50 @@ function DropdownFixedNavbar() {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
-                  color="default"
+                  color="primary"
                   data-toggle="dropdown"
                   href="#"
                   id="navbarDropdownMenuLink1"
-                  nav
+                  size="lg"
                   onClick={(e) => e.preventDefault()}
                 >
-                  <i className="now-ui-icons tech_laptop"></i>
                   <p>Projects</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/" tag={Link}>
                     <i className="now-ui-icons design_app"></i>A Better Intake
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-dropdown-fixed-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
+                  <DropdownItem to="/#Web" tag={Link}>
+                    <i className="now-ui-icons tech_mobile"></i>
+                    Websites
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
 
               <NavItem>
-                <Button
-                  className="nav-link btn-default"
-                  color="neutral"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-dropdown-fixed-navbar"
-                  target="_blank"
-                >
-                  <p>Contact</p>
-                </Button>
+                <UncontrolledDropdown nav>
+                  <DropdownToggle
+                    caret
+                    color="primary"
+                    data-toggle="dropdown"
+                    href="#"
+                    id="navbarDropdownMenuLink1"
+                    size="lg"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <p>Resume</p>
+                  </DropdownToggle>
+                  <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
+                    <DropdownItem to="/#s3 storage" tag={Link}>
+                      <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                      .PDF
+                    </DropdownItem>
+                    <DropdownItem to="/#S3 Storage" tag={Link}>
+                      <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                      .DOCX
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
               </NavItem>
             </Nav>
           </Collapse>

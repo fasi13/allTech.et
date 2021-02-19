@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 // reactstrap components
 import {
@@ -17,28 +17,28 @@ import {
   Container,
   Row,
   Col,
-} from "reactstrap";
+} from 'reactstrap'
 
 // core components
-import DropdownFixedNavbar from "components/Navbars/DropdownFixedNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import FooterDefault from "components/Footers/FooterDefault.js";
+import DropdownFixedNavbar from 'components/Navbars/DropdownFixedNavbar.js'
+import LandingPageHeader from 'components/Headers/LandingPageHeader.js'
+import FooterDefault from 'components/Footers/FooterDefault.js'
 
 function LandingPage() {
-  const [pills, setPills] = React.useState("1");
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
+  const [pills, setPills] = React.useState('1')
+  const [firstFocus, setFirstFocus] = React.useState(false)
+  const [emailFocus, setEmailFocus] = React.useState(false)
   React.useEffect(() => {
-    document.body.classList.add("landing-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
+    document.body.classList.add('landing-page')
+    document.body.classList.add('sidebar-collapse')
+    document.documentElement.classList.remove('nav-open')
+    window.scrollTo(0, 0)
+    document.body.scrollTop = 0
     return function cleanup() {
-      document.body.classList.remove("landing-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
-  }, []);
+      document.body.classList.remove('landing-page')
+      document.body.classList.remove('sidebar-collapse')
+    }
+  }, [])
   return (
     <>
       <DropdownFixedNavbar />
@@ -48,13 +48,9 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
-                <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
+                <h2 className="title">What I do?</h2>
+                <h5 className="description text-dark">
+                  Full Stack {`&`} Dev DevOps
                 </h5>
               </Col>
             </Row>
@@ -66,7 +62,7 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg38.jpg") + ")",
+                        'url(' + require('assets/img/bg38.jpg') + ')',
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -81,7 +77,7 @@ function LandingPage() {
                     className="image-container image-left-bottom"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg24.jpg") + ")",
+                        'url(' + require('assets/img/bg24.jpg') + ')',
                     }}
                   ></div>
                 </Col>
@@ -90,7 +86,7 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg39.jpg") + ")",
+                        'url(' + require('assets/img/bg39.jpg') + ')',
                     }}
                   ></div>
                   <h3>
@@ -134,7 +130,7 @@ function LandingPage() {
         <div
           className="testimonials-1 section-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg19.jpg") + ")",
+            backgroundImage: 'url(' + require('assets/img/bg19.jpg') + ')',
           }}
         >
           <Container>
@@ -156,7 +152,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         className="img img-raised"
-                        src={require("assets/img/michael.jpg")}
+                        src={require('assets/img/michael.jpg')}
                       ></img>
                     </a>
                   </div>
@@ -182,7 +178,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         className="img img-raised"
-                        src={require("assets/img/olivia.jpg")}
+                        src={require('assets/img/olivia.jpg')}
                       ></img>
                     </a>
                   </div>
@@ -208,7 +204,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         className="img img-raised"
-                        src={require("assets/img/james.jpg")}
+                        src={require('assets/img/james.jpg')}
                       ></img>
                     </a>
                   </div>
@@ -242,10 +238,10 @@ function LandingPage() {
                 >
                   <NavItem>
                     <NavLink
-                      className={pills === "1" ? "active" : ""}
+                      className={pills === '1' ? 'active' : ''}
                       onClick={(e) => {
-                        e.preventDefault();
-                        setPills("1");
+                        e.preventDefault()
+                        setPills('1')
                       }}
                       role="tablist"
                       href="#pablo"
@@ -255,10 +251,10 @@ function LandingPage() {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      className={pills === "2" ? "active" : ""}
+                      className={pills === '2' ? 'active' : ''}
                       onClick={(e) => {
-                        e.preventDefault();
-                        setPills("2");
+                        e.preventDefault()
+                        setPills('2')
                       }}
                       role="tablist"
                       href="#pablo"
@@ -308,7 +304,7 @@ function LandingPage() {
                   className="card-pricing card-background card-raised"
                   style={{
                     backgroundImage:
-                      "url(" + require("assets/img/pricing2.jpg") + ")",
+                      'url(' + require('assets/img/pricing2.jpg') + ')',
                   }}
                 >
                   <CardBody>
@@ -386,7 +382,7 @@ function LandingPage() {
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
                   className={
-                    firstFocus ? "input-lg input-group-focus" : "input-lg"
+                    firstFocus ? 'input-lg input-group-focus' : 'input-lg'
                   }
                 >
                   <InputGroupAddon addonType="prepend">
@@ -403,7 +399,7 @@ function LandingPage() {
                 </InputGroup>
                 <InputGroup
                   className={
-                    emailFocus ? "input-lg input-group-focus" : "input-lg"
+                    emailFocus ? 'input-lg input-group-focus' : 'input-lg'
                   }
                 >
                   <InputGroupAddon addonType="prepend">
@@ -446,7 +442,7 @@ function LandingPage() {
         <FooterDefault />
       </div>
     </>
-  );
+  )
 }
 
-export default LandingPage;
+export default LandingPage
