@@ -42,30 +42,32 @@ function LandingPage() {
   return (
     <>
       <DropdownFixedNavbar />
-      <div className="wrapper">
+      <div className='wrapper'>
         <LandingPageHeader />
-        <div className="section section-about-us">
+        <div className='section section-about-us'>
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">What I do?</h2>
-                <h5 className="description text-dark">
+              <Col className='ml-auto mr-auto text-center' md='8'>
+                <h2 className='title'>What I do?</h2>
+                <h5 className='description text-dark'>
                   Full Stack {`&`} Dev DevOps
                 </h5>
               </Col>
             </Row>
-            <div className="separator separator-info"></div>
-            <div className="section-story-overview">
+            <div className='separator separator-info'></div>
+            <div className='section-story-overview'>
               <Row>
-                <Col md="6">
+                <Col md='6'>
                   <div
-                    className="image-container image-left"
+                    className='image-container image-left'
                     style={{
                       backgroundImage:
-                        'url(' + require('assets/img/bg38.jpg') + ')',
+                        'url(' +
+                        require('assets/img/unsplash-jimmy-chang.jpg') +
+                        ')',
                     }}
                   >
-                    <p className="blockquote blockquote-info">
+                    <p className='blockquote blockquote-info'>
                       "Over the span of the satellite record, Arctic sea ice has
                       been declining significantly, while sea ice in the
                       Antarctichas increased very slightly" <br></br>
@@ -74,19 +76,21 @@ function LandingPage() {
                     </p>
                   </div>
                   <div
-                    className="image-container image-left-bottom"
+                    className='image-container-long image-left-bottom'
                     style={{
                       backgroundImage:
-                        'url(' + require('assets/img/bg24.jpg') + ')',
+                        'url(' + require('assets/img/Bri-and-Ry.jpg') + ')',
                     }}
                   ></div>
                 </Col>
-                <Col md="5">
+                <Col md='5'>
                   <div
-                    className="image-container image-right"
+                    className='image-container image-right'
                     style={{
                       backgroundImage:
-                        'url(' + require('assets/img/bg39.jpg') + ')',
+                        'url(' +
+                        require('assets/img/unsplash-clement-helardot.jpg') +
+                        ')',
                     }}
                   ></div>
                   <h3>
@@ -128,16 +132,16 @@ function LandingPage() {
           </Container>
         </div>
         <div
-          className="testimonials-1 section-image"
+          className='testimonials-1 section-image'
           style={{
             backgroundImage: 'url(' + require('assets/img/bg19.jpg') + ')',
           }}
         >
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <h2 className="title">What is ALPHA?</h2>
-                <h4 className="description text-white">
+              <Col className='ml-auto mr-auto text-center' md='6'>
+                <h2 className='title'>What is ALPHA?</h2>
+                <h4 className='description text-white'>
                   If you’re selected for ALPHA you’ll also get 3 tickets,
                   opportunity to access Investor Office Hours and Mentor Hours
                   and much more all for €850.
@@ -145,96 +149,96 @@ function LandingPage() {
               </Col>
             </Row>
             <Row>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+              <Col md='4'>
+                <Card className='card-testimonial'>
+                  <div className='card-avatar'>
+                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
                       <img
-                        alt="..."
-                        className="img img-raised"
+                        alt='...'
+                        className='img img-raised'
                         src={require('assets/img/michael.jpg')}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <p className="card-description">
+                    <p className='card-description'>
                       The networking at Web Summit is like no other European
                       tech conference.
                     </p>
                   </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
+                  <div className='icon icon-info'>
+                    <i className='fa fa-quote-right'></i>
                   </div>
                   <CardFooter>
-                    <CardTitle tag="h4">Michael Elijah</CardTitle>
-                    <p className="category">@michaelelijah</p>
+                    <CardTitle tag='h4'>Michael Elijah</CardTitle>
+                    <p className='category'>@michaelelijah</p>
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+              <Col md='4'>
+                <Card className='card-testimonial'>
+                  <div className='card-avatar'>
+                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
                       <img
-                        alt="..."
-                        className="img img-raised"
+                        alt='...'
+                        className='img img-raised'
                         src={require('assets/img/olivia.jpg')}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <p className="card-description">
+                    <p className='card-description'>
                       The connections you make at Web Summit are unparalleled,
                       we met users all over the world.
                     </p>
                   </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
+                  <div className='icon icon-info'>
+                    <i className='fa fa-quote-right'></i>
                   </div>
                   <CardFooter>
-                    <CardTitle tag="h4">Olivia Harper</CardTitle>
-                    <p className="category">@oliviaharper</p>
+                    <CardTitle tag='h4'>Olivia Harper</CardTitle>
+                    <p className='category'>@oliviaharper</p>
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+              <Col md='4'>
+                <Card className='card-testimonial'>
+                  <div className='card-avatar'>
+                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
                       <img
-                        alt="..."
-                        className="img img-raised"
+                        alt='...'
+                        className='img img-raised'
                         src={require('assets/img/james.jpg')}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <p className="card-description">
+                    <p className='card-description'>
                       Web Summit will increase your appetite, your inspiration,
                       and your network.
                     </p>
                   </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
+                  <div className='icon icon-info'>
+                    <i className='fa fa-quote-right'></i>
                   </div>
                   <CardFooter>
-                    <CardTitle tag="h4">James Logan</CardTitle>
-                    <p className="category">@jameslogan</p>
+                    <CardTitle tag='h4'>James Logan</CardTitle>
+                    <p className='category'>@jameslogan</p>
                   </CardFooter>
                 </Card>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="pricing-2">
+        <div className='pricing-2'>
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <h2 className="title">Pick the best plan for you</h2>
+              <Col className='ml-auto mr-auto text-center' md='6'>
+                <h2 className='title'>Pick the best plan for you</h2>
                 <Nav
-                  className="nav-pills-info justify-content-center"
+                  className='nav-pills-info justify-content-center'
                   pills
-                  role="tablist"
+                  role='tablist'
                 >
                   <NavItem>
                     <NavLink
@@ -243,8 +247,8 @@ function LandingPage() {
                         e.preventDefault()
                         setPills('1')
                       }}
-                      role="tablist"
-                      href="#pablo"
+                      role='tablist'
+                      href='#pablo'
                     >
                       Legal Entity
                     </NavLink>
@@ -256,8 +260,8 @@ function LandingPage() {
                         e.preventDefault()
                         setPills('2')
                       }}
-                      role="tablist"
-                      href="#pablo"
+                      role='tablist'
+                      href='#pablo'
                     >
                       Individual
                     </NavLink>
@@ -266,11 +270,11 @@ function LandingPage() {
               </Col>
             </Row>
             <Row>
-              <Col md="4">
-                <Card className="card-pricing card-plain">
+              <Col md='4'>
+                <Card className='card-pricing card-plain'>
                   <CardBody>
-                    <h6 className="category">Enterprise</h6>
-                    <CardTitle tag="h1">
+                    <h6 className='category'>Enterprise</h6>
+                    <CardTitle tag='h1'>
                       <small>$</small>
                       59
                     </CardTitle>
@@ -289,9 +293,9 @@ function LandingPage() {
                       </li>
                     </ul>
                     <Button
-                      className="btn-round"
-                      color="info"
-                      href="#pablo"
+                      className='btn-round'
+                      color='info'
+                      href='#pablo'
                       onClick={(e) => e.preventDefault()}
                     >
                       Sign Up
@@ -299,17 +303,17 @@ function LandingPage() {
                   </CardBody>
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md='4'>
                 <Card
-                  className="card-pricing card-background card-raised"
+                  className='card-pricing card-background card-raised'
                   style={{
                     backgroundImage:
                       'url(' + require('assets/img/pricing2.jpg') + ')',
                   }}
                 >
                   <CardBody>
-                    <h6 className="category text-info">Professional</h6>
-                    <CardTitle tag="h1">
+                    <h6 className='category text-info'>Professional</h6>
+                    <CardTitle tag='h1'>
                       <small>$</small>
                       29
                     </CardTitle>
@@ -328,9 +332,9 @@ function LandingPage() {
                       </li>
                     </ul>
                     <Button
-                      className="btn-neutral btn-round"
-                      color="default"
-                      href="#pablo"
+                      className='btn-neutral btn-round'
+                      color='default'
+                      href='#pablo'
                       onClick={(e) => e.preventDefault()}
                     >
                       Sign Up
@@ -338,11 +342,11 @@ function LandingPage() {
                   </CardBody>
                 </Card>
               </Col>
-              <Col md="4">
-                <Card className="card-pricing card-plain">
+              <Col md='4'>
+                <Card className='card-pricing card-plain'>
                   <CardBody>
-                    <h6 className="category">Standard</h6>
-                    <CardTitle tag="h1">
+                    <h6 className='category'>Standard</h6>
+                    <CardTitle tag='h1'>
                       <small>$</small>
                       17
                     </CardTitle>
@@ -361,9 +365,9 @@ function LandingPage() {
                       </li>
                     </ul>
                     <Button
-                      className="btn-round"
-                      color="info"
-                      href="#pablo"
+                      className='btn-round'
+                      color='info'
+                      href='#pablo'
                       onClick={(e) => e.preventDefault()}
                     >
                       Get Started
@@ -374,25 +378,25 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-contact-us text-center">
+        <div className='section section-contact-us text-center'>
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <h2 className='title'>Want to work with us?</h2>
+            <p className='description'>Your project is very important to us.</p>
             <Row>
-              <Col className="text-center ml-auto mr-auto" lg="6" md="8">
+              <Col className='text-center ml-auto mr-auto' lg='6' md='8'>
                 <InputGroup
                   className={
                     firstFocus ? 'input-lg input-group-focus' : 'input-lg'
                   }
                 >
-                  <InputGroupAddon addonType="prepend">
+                  <InputGroupAddon addonType='prepend'>
                     <InputGroupText>
-                      <i className="now-ui-icons users_circle-08"></i>
+                      <i className='now-ui-icons users_circle-08'></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="First Name..."
-                    type="text"
+                    placeholder='First Name...'
+                    type='text'
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
                   ></Input>
@@ -402,35 +406,35 @@ function LandingPage() {
                     emailFocus ? 'input-lg input-group-focus' : 'input-lg'
                   }
                 >
-                  <InputGroupAddon addonType="prepend">
+                  <InputGroupAddon addonType='prepend'>
                     <InputGroupText>
-                      <i className="now-ui-icons ui-1_email-85"></i>
+                      <i className='now-ui-icons ui-1_email-85'></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Email Here..."
-                    type="text"
+                    placeholder='Email Here...'
+                    type='text'
                     onFocus={() => setEmailFocus(true)}
                     onBlur={() => setEmailFocus(false)}
                   ></Input>
                 </InputGroup>
-                <div className="textarea-container">
+                <div className='textarea-container'>
                   <Input
-                    cols="80"
-                    name="name"
-                    placeholder="Type a message..."
-                    rows="4"
-                    type="textarea"
+                    cols='80'
+                    name='name'
+                    placeholder='Type a message...'
+                    rows='4'
+                    type='textarea'
                   ></Input>
                 </div>
-                <div className="send-button">
+                <div className='send-button'>
                   <Button
                     block
-                    className="btn-round"
-                    color="info"
-                    href="#pablo"
+                    className='btn-round'
+                    color='info'
+                    href='#pablo'
                     onClick={(e) => e.preventDefault()}
-                    size="lg"
+                    size='lg'
                   >
                     Send Message
                   </Button>
