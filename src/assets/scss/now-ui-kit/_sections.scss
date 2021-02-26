@@ -106,7 +106,9 @@
   &:before {
     display: none;
   }
-
+  &[filter-color='purple'] {
+    @include linear-gradient(rgba($black-color, 0.2), #a808ca);
+  }
   &[filter-color='orange'] {
     @include linear-gradient(rgba($black-color, 0.2), rgba(224, 23, 3, 0.6));
   }

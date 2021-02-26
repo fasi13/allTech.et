@@ -49,9 +49,7 @@ function LandingPage() {
             <Row>
               <Col className='ml-auto mr-auto text-center' md='8'>
                 <h2 className='title'>What I do?</h2>
-                <h5 className='description text-dark'>
-                  Full Stack {`&`} Dev DevOps
-                </h5>
+                <h5 className='text-dark'>Full Stack Web {`&`} DevOps</h5>
               </Col>
             </Row>
             <div className='separator separator-info'></div>
@@ -67,16 +65,15 @@ function LandingPage() {
                         ')',
                     }}
                   >
-                    <p className='blockquote blockquote-info'>
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
-                      <br></br>
-                      <small>-NOAA</small>
+                    <p className='blockquote blockquote-primary'>
+                      Create a Positive Impact. Leadership Through Action. Do
+                      the Right Thing. Hard Discipline. Be Humble. Excellence is
+                      Essential. Be a Lifetime Student.
+                      <small>-Arête</small>
                     </p>
                   </div>
                   <div
-                    className='image-container-long image-left-bottom'
+                    className='image-container image-left-bottom'
                     style={{
                       backgroundImage:
                         'url(' + require('assets/img/Bri-and-Ry.jpg') + ')',
@@ -94,37 +91,25 @@ function LandingPage() {
                     }}
                   ></div>
                   <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                    Websites{' '}
+                    <span role='img' aria-label='website'>
+                      💻
+                    </span>{' '}
+                    + Cloud Tech
+                    <span role='img' aria-label='cloud'>
+                      🌤️
+                    </span>
                   </h3>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    I try to make websites that are more than just the online
+                    billboard.
                   </p>
+                  <p>Apps and tooling that make the job easier.</p>
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
-                  </p>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    Some more info here....{' '}
+                    <span role='img' aria-label='smiley face'>
+                      😄
+                    </span>
                   </p>
                 </Col>
               </Row>
