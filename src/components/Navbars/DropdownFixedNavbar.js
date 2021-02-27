@@ -20,46 +20,40 @@ function DropdownFixedNavbar() {
     <>
       {collapseOpen ? (
         <div
-          id="bodyClick"
+          id='bodyClick'
           onClick={() => {
             document.documentElement.classList.toggle('nav-open')
             setCollapseOpen(false)
           }}
         />
       ) : null}
-      <Navbar className="navbar-absolute navbar-transparent" expand="lg">
+      <Navbar className='navbar-absolute navbar-transparent' expand='lg'>
         <Container>
-          <UncontrolledDropdown className="button-dropdown">
+          <UncontrolledDropdown className='button-dropdown'>
             <DropdownToggle
               caret
-              tag="a"
-              data-toggle="dropdown"
-              href="/"
-              id="navbarDropdown"
+              tag='a'
+              data-toggle='dropdown'
+              href='/'
+              id='navbarDropdown'
               onClick={(e) => e.preventDefault()}
             >
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
+              <span className='button-bar'></span>
+              <span className='button-bar'></span>
+              <span className='button-bar'></span>
             </DropdownToggle>
-            <DropdownMenu aria-labelledby="navbarDropdown">
+            <DropdownMenu aria-labelledby='navbarDropdown'>
               <DropdownItem header>My Links</DropdownItem>
-              <DropdownItem
-                href="https://github.com/Bri997"
-                onClick={(e) => e.preventDefault()}
-              >
+              <DropdownItem href='https://github.com/Bri997'>
                 GitHub
               </DropdownItem>
-              <DropdownItem
-                href="https://www.linkedin.com/in/bmusial/"
-                onClick={(e) => e.preventDefault()}
-              >
+              <DropdownItem href='https://www.linkedin.com/in/bmusial/'>
                 LinkedIn
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <div className="navbar-translate">
-            <NavbarBrand to="/" tag={Link} id="navbar-brand">
+          <div className='navbar-translate'>
+            <NavbarBrand to='/' tag={Link} id='navbar-brand'>
               Just A Portfolio
             </NavbarBrand>
 
@@ -69,33 +63,33 @@ function DropdownFixedNavbar() {
                 setCollapseOpen(!collapseOpen)
               }}
               aria-expanded={collapseOpen}
-              className="navbar-toggler"
+              className='navbar-toggler'
             >
-              <span className="navbar-toggler-bar top-bar"></span>
-              <span className="navbar-toggler-bar middle-bar"></span>
-              <span className="navbar-toggler-bar bottom-bar"></span>
+              <span className='navbar-toggler-bar top-bar'></span>
+              <span className='navbar-toggler-bar middle-bar'></span>
+              <span className='navbar-toggler-bar bottom-bar'></span>
             </button>
           </div>
           <Collapse isOpen={collapseOpen} navbar>
-            <Nav className="ml-auto" id="ceva" navbar>
+            <Nav className='ml-auto' id='ceva' navbar>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
-                  color="primary"
-                  data-toggle="dropdown"
-                  href="#"
-                  id="navbarDropdownMenuLink1"
-                  size="lg"
+                  color='default'
+                  data-toggle='dropdown'
+                  href='#'
+                  id='navbarDropdownMenuLink1'
+                  size='lg'
                   onClick={(e) => e.preventDefault()}
                 >
                   <p>Projects</p>
                 </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_app"></i>A Better Intake
+                <DropdownMenu aria-labelledby='navbarDropdownMenuLink1' right>
+                  <DropdownItem to='/' tag={Link}>
+                    <i className='now-ui-icons design_app'></i>A Better Intake
                   </DropdownItem>
-                  <DropdownItem to="/#Web" tag={Link}>
-                    <i className="now-ui-icons tech_mobile"></i>
+                  <DropdownItem to='/#Web' tag={Link}>
+                    <i className='now-ui-icons tech_mobile'></i>
                     Websites
                   </DropdownItem>
                 </DropdownMenu>
@@ -105,22 +99,22 @@ function DropdownFixedNavbar() {
                 <UncontrolledDropdown nav>
                   <DropdownToggle
                     caret
-                    color="primary"
-                    data-toggle="dropdown"
-                    href="#"
-                    id="navbarDropdownMenuLink1"
-                    size="lg"
+                    color='default'
+                    data-toggle='dropdown'
+                    href='#'
+                    id='navbarDropdownMenuLink1'
+                    size='lg'
                     onClick={(e) => e.preventDefault()}
                   >
                     <p>Resume</p>
                   </DropdownToggle>
-                  <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                    <DropdownItem to="/#s3 storage" tag={Link}>
-                      <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <DropdownMenu aria-labelledby='navbarDropdownMenuLink1' right>
+                    <DropdownItem to='/#s3 storage' tag={Link}>
+                      <i className='now-ui-icons arrows-1_cloud-download-93'></i>
                       .PDF
                     </DropdownItem>
-                    <DropdownItem to="/#S3 Storage" tag={Link}>
-                      <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                    <DropdownItem to='/#S3 Storage' tag={Link}>
+                      <i className='now-ui-icons arrows-1_cloud-download-93'></i>
                       .DOCX
                     </DropdownItem>
                   </DropdownMenu>

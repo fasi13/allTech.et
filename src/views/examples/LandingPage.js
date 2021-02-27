@@ -30,7 +30,7 @@ function LandingPage() {
             <Row>
               <Col className='ml-auto mr-auto text-center' md='8'>
                 <h2 className='title'>What I do?</h2>
-                <h5 className='text-dark'>Full Stack Web {`&`} DevOps</h5>
+                <h5 className='text-dark'>Full Stack Web Apps {`&`} DevOps</h5>
               </Col>
             </Row>
             <div className='separator separator-info'></div>
