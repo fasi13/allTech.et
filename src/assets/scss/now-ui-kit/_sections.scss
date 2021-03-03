@@ -147,7 +147,7 @@
     }
   }
   .image-container-long {
-    height: 530px;
+    height: 630px;
     position: relative;
     background-position: center center;
     background-size: cover;
@@ -158,8 +158,9 @@
     }
 
     &:nth-child(2) {
-      margin-top: 220px;
+      margin-top: 20px;
       margin-left: -105px;
+      margin-bottom: 20px;
     }
   }
 

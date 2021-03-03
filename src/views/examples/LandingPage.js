@@ -64,7 +64,7 @@ function LandingPage() {
                         ')',
                     }}
                   ></div>
-                  <h3>
+                  <h2>
                     Websites{' '}
                     <span role='img' aria-label='website'>
                       💻
@@ -73,21 +73,33 @@ function LandingPage() {
                     <span role='img' aria-label='cloud'>
                       🌤️
                     </span>{' '}
-                    {`& a dog`}
+                    {`and a dog`}
                     <span role='img' aria-label='dog'>
                       🐕
                     </span>
-                  </h3>
-                  <p>
+                  </h2>
+                  <h4>
                     I try to make websites that are more than just the online
                     billboard.
-                  </p>
-                  <p>Apps and tooling that make the job easier.</p>
+                  </h4>
+
+                  <p>I'm made this site using React and AWS for CI/CD</p>
                   <p>
-                    Some more info here....{' '}
-                    <span role='img' aria-label='smiley face'>
-                      😄
-                    </span>
+                    My attempt with working on established code base and how
+                    CI/CD works in the "real world." This code is modded from
+                    the works of{' '}
+                    <a
+                      href={'https://creative-tim.com'}
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      CreativeTim
+                    </a>
+                    .
+                  </p>
+                  <p>
+                    *TODO* I would like to use the github api to stash my
+                    commits here act as a change log.
                   </p>
                 </Col>
               </Row>
@@ -103,18 +115,22 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className='ml-auto mr-auto text-center' md='6'>
+                <div></div>
                 <h2 className='title'>What is Arête?</h2>
                 <h4 className='description text-white'>
-                  <ul>
-                    <li>Create a Positive Impact.</li>
-                    <li>Leadership Through Action.</li>
-                    <li>Do the Right Thing.</li>
-                    <li>Hard Discipline.</li>
-                    <li>Be Humble.</li>
-                    <li>Excellence is Essential.</li>
-                    <li>Be a Lifetime Student.</li>
-                  </ul>
+                  a·rête /əˈrāt/ Arete is a concept in ancient Greek thought
+                  that, in its most basic sense, refers to "excellence" of any
+                  kind.
                 </h4>
+                <ul className='description-ul text-white'>
+                  <li>Create a Positive Impact.</li>
+                  <li>Leadership Through Action.</li>
+                  <li>Do the Right Thing.</li>
+                  <li>Hard Discipline.</li>
+                  <li>Be Humble.</li>
+                  <li>Excellence is Essential.</li>
+                  <li>Be a Lifetime Student.</li>
+                </ul>
               </Col>
             </Row>
           </Container>
