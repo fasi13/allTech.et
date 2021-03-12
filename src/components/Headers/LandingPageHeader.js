@@ -39,14 +39,16 @@ function LandingPageHeader() {
               <Button
                 className='btn-icon btn-round mr-2'
                 size='lg'
-                href='http://github.com/Bri997'
+                tag='a'
+                href='https://github.com/Bri997'
               >
                 <i className='fab fa-github'></i>
               </Button>
               <Button
                 className='btn-icon btn-round mr-2'
                 size='lg'
-                href='http://www.linkedin.com/in/bmusial'
+                tag='a'
+                href='https://www.linkedin.com/in/bmusial'
               >
                 <i className='fab fa-linkedin'></i>
               </Button>

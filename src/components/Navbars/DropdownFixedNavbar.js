@@ -44,10 +44,10 @@ function DropdownFixedNavbar() {
             </DropdownToggle>
             <DropdownMenu aria-labelledby='navbarDropdown'>
               <DropdownItem header>My Links</DropdownItem>
-              <DropdownItem href='https://github.com/Bri997'>
+              <DropdownItem tag='a' href='https://github.com/Bri997'>
                 GitHub
               </DropdownItem>
-              <DropdownItem href='https://www.linkedin.com/in/bmusial/'>
+              <DropdownItem tag='a' href='https://www.linkedin.com/in/bmusial/'>
                 LinkedIn
               </DropdownItem>
             </DropdownMenu>
@@ -85,10 +85,10 @@ function DropdownFixedNavbar() {
                   <p>Projects</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby='navbarDropdownMenuLink1' right>
-                  <DropdownItem to='/' tag={Link}>
+                  <DropdownItem tag='a' href='https://www.newclientintake.com'>
                     <i className='now-ui-icons design_app'></i>A Better Intake
                   </DropdownItem>
-                  <DropdownItem to='/#Web' tag={Link}>
+                  <DropdownItem tag='a' href='https://appdevs.us/'>
                     <i className='now-ui-icons tech_mobile'></i>
                     Websites
                   </DropdownItem>
@@ -109,13 +109,12 @@ function DropdownFixedNavbar() {
                     <p>Resume</p>
                   </DropdownToggle>
                   <DropdownMenu aria-labelledby='navbarDropdownMenuLink1' right>
-                    <DropdownItem to='/#s3 storage' tag={Link}>
+                    <DropdownItem
+                      tag='a'
+                      href='https://brianresume.s3.amazonaws.com/Brian+Musial+Resume+2021.3.pdf'
+                    >
                       <i className='now-ui-icons arrows-1_cloud-download-93'></i>
                       .PDF
-                    </DropdownItem>
-                    <DropdownItem to='/#S3 Storage' tag={Link}>
-                      <i className='now-ui-icons arrows-1_cloud-download-93'></i>
-                      .DOCX
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
