@@ -217,7 +217,7 @@ function DropdownScrollNavbar() {
                     <i className="now-ui-icons text_align-left"></i>
                     Blog Post
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/blog-posts">
+                  <DropdownItem tag={Link} to="/home">
                     <i className="now-ui-icons design_bullet-list-67"></i>
                     Blog Posts
                   </DropdownItem>

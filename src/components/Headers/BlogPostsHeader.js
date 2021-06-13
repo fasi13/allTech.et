@@ -1,7 +1,7 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 // reactstrap components
-import { Row, Col,Button } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 
 // core components
 
@@ -26,23 +26,20 @@ function BlogPostsHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/unsplash-jimmy-chang.jpg") + ")",
+            backgroundImage:
+              "url(" + require("assets/img/unsplash-jimmy-chang.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title">
-                Welcome to All Tech
-              </h2>
+              <h2 className="title">Welcome to All Tech</h2>
             </Col>
           </Row>
           <Button
             tag={Link}
             to="/news"
-            style={{backgroundColor:'black'}}
-            color="info"
             // onClick={(e) => e.preventDefault()}
             size="lg"
           >
@@ -51,7 +48,6 @@ function BlogPostsHeader() {
           <Button
             tag={Link}
             to="/infos"
-            style={{backgroundColor:'black'}}
             // onClick={(e) => e.preventDefault()}
             size="lg"
           >
@@ -60,7 +56,6 @@ function BlogPostsHeader() {
           <Button
             tag={Link}
             to="/infos"
-            style={{backgroundColor:'black'}}
             // onClick={(e) => e.preventDefault()}
             size="lg"
           >

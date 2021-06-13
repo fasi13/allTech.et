@@ -48,7 +48,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       {/* <Route path="/about-us" render={(props) => <AboutUs {...props} />} /> */}
-      <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
+      <Route path="/home" render={(props) => <BlogPosts {...props} />} />
       <Route path="/infos" render={(props) => <Infos {...props} />} />
       <Route path="/news" render={(props) => <News {...props} />} />
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />

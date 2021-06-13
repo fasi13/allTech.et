@@ -584,48 +584,6 @@ function Infos() {
             <div className="instruction" style={{ paddingTop: "20px" }}>
               {contentDescription}
             </div>
-
-            {/* <div className="instruction">
-            <Row>
-              <Col md="8" style={{ paddingTop: "10px" }}>
-                <strong>1. Register</strong>
-                <p className="description">
-                  The first step is to create an account at{" "}
-                  <a
-                    href="http://www.creative-tim.com/?ref=nuk-pro-react-index"
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </a>
-                  . You can choose a social network or go for the classic
-                  version, whatever works best for you.
-                </p>
-              </Col>
-            </Row>
-          </div>
-          <div className="instruction">
-            <Row>
-              <Col md="8">
-                <strong>2. Apply</strong>
-                <p className="description">
-                  The first step is to create an account at{" "}
-                  <a
-                    href="http://www.creative-tim.com/?ref=nuk-pro-react-index"
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </a>
-                  . You can choose a social network or go for the classic
-                  version, whatever works best for you.
-                </p>
-              </Col>
-            </Row>
-          </div>
-          <p>
-            If you have more questions, don't hesitate to contact us or send us
-            a tweet @creativetim. We{"'"}re here to help!
-          </p>
-        */}
           </div>
           <ModalFooter className="justify-content-center">
             <Button

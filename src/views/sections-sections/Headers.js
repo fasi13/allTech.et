@@ -27,7 +27,7 @@ const items = [
           <br></br>
           <Button
             tag={Link}
-            to="/blog-posts"
+            to="/home"
             color="info"
             // onClick={(e) => e.preventDefault()}
             size="lg"
@@ -89,7 +89,7 @@ const items = [
           </h4>
           <Button
             tag={Link}
-            to="/blog-posts"
+            to="/home"
             color="info"
             // onClick={(e) => e.preventDefault()}
             size="lg"
@@ -116,7 +116,7 @@ const items = [
           <div className="buttons">
             <Button
               tag={Link}
-              to="/blog-posts"
+              to="/home"
               color="info"
               // onClick={(e) => e.preventDefault()}
               size="lg"

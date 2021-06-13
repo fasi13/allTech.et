@@ -110,7 +110,7 @@ function Examples() {
               </Card>
               <h5 className="title">Blog Posts</h5>
               <Card>
-                <Link to="/blog-posts">
+                <Link to="/home">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/pages/blog-posts.jpg")}

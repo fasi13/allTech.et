@@ -63,11 +63,11 @@ function ScrollTransparentNavbar() {
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand to="/" tag={Link} id="navbar-brand">
+            <NavbarBrand to="/home" tag={Link} id="navbar-brand">
               All Tech
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
-              Designed by all tech Tim
+              Designed by all Tech
             </UncontrolledTooltip>
             <button
               onClick={() => {
@@ -101,10 +101,6 @@ function ScrollTransparentNavbar() {
                   <DropdownItem to="/infos" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
                     ለአንድሮይድ ስልኮች
-                  </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -158,8 +154,7 @@ function ScrollTransparentNavbar() {
                 <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
-                  target="_blank"
+                  href="#pablo"
                 >
                   <p>Contact Us</p>
                 </Button>

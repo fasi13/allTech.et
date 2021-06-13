@@ -11,13 +11,13 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 function BlogPosts() {
   
   React.useEffect(() => {
-    document.body.classList.add("blog-posts");
+    document.body.classList.add("home");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     return function cleanup() {
-      document.body.classList.remove("blog-posts");
+      document.body.classList.remove("home");
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
