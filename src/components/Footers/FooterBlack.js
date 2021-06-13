@@ -15,26 +15,16 @@ function FooterBlack() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nuk-pro-react-footer-black"
-                  target="_blank"
+                  href="#pablo"
                 >
-                  Creative Tim
+                  allTech Tim
                 </a>
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nuk-pro-react-footer-black"
-                  target="_blank"
+                  href="#pablo"
                 >
                   About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com?ref=nuk-pro-react-footer-black"
-                  target="_blank"
-                >
-                  Blog
                 </a>
               </li>
             </ul>
@@ -42,17 +32,9 @@ function FooterBlack() {
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="https://www.invisionapp.com?ref=creativetim"
-              target="_blank"
+              href="#pablo"
             >
-              Invision
-            </a>
-            . Coded by{" "}
-            <a
-              href="https://www.creative-tim.com?ref=nuk-pro-react-footer-black"
-              target="_blank"
-            >
-              Creative Tim
+              allTech
             </a>
             .
           </div>

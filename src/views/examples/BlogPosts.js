@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar";
 import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
-import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
+import FooterBlack from "components/Footers/FooterBlack.js";
 
 function BlogPosts() {
   
@@ -45,7 +45,7 @@ function BlogPosts() {
         <div className="projects-4">
           <Container fluid></Container>
         </div>
-        <FooterBlackSocial />
+        <FooterBlack />
       </div>
     </>
   );

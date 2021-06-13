@@ -12,6 +12,7 @@ import {
   Button,
 } from "reactstrap";
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar";
+import FooterBlack from 'components/Footers/FooterBlack'
 // core components
 
 function Infos() {
@@ -706,6 +707,7 @@ function Infos() {
           </div>
         </Container>
       </div>
+      <FooterBlack />
     </>
   );
 }

@@ -18,8 +18,8 @@ import {
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import ProductPageHeader from "components/Headers/PricingHeader";
-import FooterSocial from "components/Footers/Footer";
+import PageHeader from "components/Headers/PricingHeader";
+import FooterBlack from "components/Footers/FooterBlack";
 
 const items = [
   {
@@ -154,7 +154,7 @@ function News() {
     <>
       <ScrollTransparentNavbar />
       <div className="wrapper">
-        <ProductPageHeader />
+        <PageHeader />
         <div className="section">
           <Container>
             <Row>
@@ -970,7 +970,7 @@ function News() {
             </Row>
           </Container>
         </div>
-        <FooterSocial />
+        <FooterBlack />
       </div>
     </>
   );
