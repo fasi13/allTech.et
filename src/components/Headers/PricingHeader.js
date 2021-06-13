@@ -18,7 +18,7 @@ function PricingHeader() {
         <div className="content-center">
           <Row>
             <Col className="ml-auto mr-auto" md="8">
-              <h1 className="title">Let's get started</h1>
+              <h1 className="title">የ ቴክ መረጃ ዜናዎች</h1>
             </Col>
           </Row>
         </div>

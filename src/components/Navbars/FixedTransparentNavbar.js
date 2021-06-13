@@ -34,10 +34,10 @@ function FixedTransparentNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand to="/" tag={Link} id="navbar-brand">
-              Now Ui Kit PRO React
+              All Tech
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              Designed by IAll Tech Tim
             </UncontrolledTooltip>
             <button
               onClick={() => {
@@ -65,7 +65,7 @@ function FixedTransparentNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app"></i>
-                  <p>Components</p>
+                  <p>የ ቴክ መረጃ ዜናዎች</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/" tag={Link}>
@@ -82,7 +82,7 @@ function FixedTransparentNavbar() {
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
+                    መሰረታዊ መረጃዎች
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -100,7 +100,7 @@ function FixedTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
                   ></i>
-                  <p>Sections</p>
+                  <p>መሰረታዊ መረጃዎች</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
@@ -151,7 +151,7 @@ function FixedTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons design_image"
                   ></i>
-                  <p>Examples</p>
+                  <p>የ ዩቲዩብ ቪድዮዎች</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/about-us">
@@ -207,7 +207,7 @@ function FixedTransparentNavbar() {
                   href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-fixed-transparent-navbar"
                   target="_blank"
                 >
-                  <p>Buy Now</p>
+                  <p>Contact Us</p>
                 </Button>
               </NavItem>
             </Nav>

@@ -10,6 +10,7 @@ function ProductPageHeader() {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
+        console.log(pageHeader)
         pageHeader.current.style.transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };

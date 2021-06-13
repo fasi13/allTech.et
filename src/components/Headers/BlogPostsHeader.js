@@ -1,7 +1,7 @@
 import React from "react";
-
+import {Link} from 'react-router-dom'
 // reactstrap components
-import { Button, Row, Col } from "reactstrap";
+import { Row, Col,Button } from "reactstrap";
 
 // core components
 
@@ -26,7 +26,7 @@ function BlogPostsHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg44.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/unsplash-jimmy-chang.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -34,16 +34,38 @@ function BlogPostsHeader() {
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
               <h2 className="title">
-                A Place for Entrepreneurs to Share and Discover New Stories
+                Welcome to All Tech
               </h2>
-              <Button className="btn-round btn-icon mr-1" color="info">
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button className="btn-round btn-icon" color="info">
-                <i className="fab fa-instagram"></i>
-              </Button>
             </Col>
           </Row>
+          <Button
+            tag={Link}
+            to="/news"
+            style={{backgroundColor:'black'}}
+            color="info"
+            // onClick={(e) => e.preventDefault()}
+            size="lg"
+          >
+            <i className="now-ui-icons education_paper"></i> የ ቴክ መረጃ ዜናዎች
+          </Button>
+          <Button
+            tag={Link}
+            to="/infos"
+            style={{backgroundColor:'black'}}
+            // onClick={(e) => e.preventDefault()}
+            size="lg"
+          >
+            <i className="now-ui-icons business_briefcase-24"></i> መሰረታዊ መረጃዎች
+          </Button>
+          <Button
+            tag={Link}
+            to="/infos"
+            style={{backgroundColor:'black'}}
+            // onClick={(e) => e.preventDefault()}
+            size="lg"
+          >
+            <i className="now-ui-icons media-1_button-play"></i> የ ዩቲዩብ ቪድዮዎች
+          </Button>
         </div>
       </div>
     </>

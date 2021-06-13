@@ -156,9 +156,16 @@ function Javascript() {
                   </h5>
                 </div>
                 <div className="modal-body">
+                  <div className="picture">
+                    <img
+                      alt="..."
+                      className="rounded img-raised"
+                      src={require("assets/img/pricing1.jpg")}
+                    ></img>
+                  </div>
                   <div className="instruction">
                     <Row>
-                      <Col md="8">
+                      <Col md="8" style={{paddingTop:'10px'}}>
                         <strong>1. Register</strong>
                         <p className="description">
                           The first step is to create an account at{" "}
@@ -171,15 +178,6 @@ function Javascript() {
                           . You can choose a social network or go for the
                           classic version, whatever works best for you.
                         </p>
-                      </Col>
-                      <Col md="4">
-                        <div className="picture">
-                          <img
-                            alt="..."
-                            className="rounded img-raised"
-                            src={require("assets/img/pricing1.jpg")}
-                          ></img>
-                        </div>
                       </Col>
                     </Row>
                   </div>
@@ -199,15 +197,7 @@ function Javascript() {
                           classic version, whatever works best for you.
                         </p>
                       </Col>
-                      <Col md="4">
-                        <div className="picture">
-                          <img
-                            alt="..."
-                            className="rounded img-raised"
-                            src={require("assets/img/project9.jpg")}
-                          ></img>
-                        </div>
-                      </Col>
+                      
                     </Row>
                   </div>
                   <p>
@@ -225,6 +215,7 @@ function Javascript() {
                   </Button>
                 </ModalFooter>
               </Modal>
+             
               <Modal
                 className="modal-login"
                 modalClassName="modal-info"
