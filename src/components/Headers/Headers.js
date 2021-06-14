@@ -177,7 +177,7 @@ function Headers() {
         <div className="header-3">
           <Carousel
             ride="carousel"
-            interval={5000}
+            interval={7000}
             activeIndex={activeIndex}
             next={next}
             previous={previous}
