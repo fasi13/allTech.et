@@ -144,9 +144,9 @@ function ScrollTransparentNavbar() {
                   <p>የ ዩቲዩብ ቪድዮዎች</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem tag={Link} to="/about-us">
+                  <DropdownItem tag={Link} to="/vedio-link">
                     <i className="now-ui-icons business_bulb-63"></i>
-                    About-us
+                    ቪድዮዎች
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
