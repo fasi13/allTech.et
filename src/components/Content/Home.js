@@ -5,10 +5,10 @@ import { Container } from "reactstrap";
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar";
-import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
+import HomeHeader from "components/Headers/HomeHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
-function BlogPosts() {
+function Home() {
   
   React.useEffect(() => {
     document.body.classList.add("home");
@@ -26,7 +26,7 @@ function BlogPosts() {
     <>
       <ScrollTransparentNavbar />
       <div className="wrapper">
-        <BlogPostsHeader />
+        <HomeHeader />
         <div className="projects-4" style={{padding:'10px 0px'}}>
           <Container fluid></Container>
         </div>
@@ -51,4 +51,4 @@ function BlogPosts() {
   );
 }
 
-export default BlogPosts;
+export default Home;

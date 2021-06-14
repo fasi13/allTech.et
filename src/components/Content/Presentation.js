@@ -4,7 +4,7 @@ import Rellax from "rellax";
 // reactstrap components
 
 // core components
-import PresentationHeader from "views/sections-sections/Headers";
+import PresentationHeader from "components/Headers/Headers";
 
 
 function Presentation() {

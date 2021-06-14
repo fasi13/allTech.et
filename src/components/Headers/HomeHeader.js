@@ -5,7 +5,7 @@ import { Row, Col, Button } from "reactstrap";
 
 // core components
 
-function BlogPostsHeader() {
+function HomeHeader() {
   let pageHeader = React.createRef();
   React.useEffect(() => {
     if (window.innerWidth > 991) {
@@ -55,7 +55,7 @@ function BlogPostsHeader() {
           </Button>
           <Button
             tag={Link}
-            to="/infos"
+            to="/vedio-link"
             // onClick={(e) => e.preventDefault()}
             size="lg"
           >
@@ -67,4 +67,4 @@ function BlogPostsHeader() {
   );
 }
 
-export default BlogPostsHeader;
+export default HomeHeader;
