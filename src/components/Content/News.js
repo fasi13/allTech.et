@@ -23,29 +23,24 @@ import FooterBlack from "components/Footers/FooterBlack";
 
 const items = [
   {
-    src: require("assets/img/kana1.jpg"),
+    src: require("assets/img/mint1.jpg"),
     altText: "",
     caption: "",
   },
- 
+];
+const items1 = [
   {
-    src: require("assets/img/kana3.jpg"),
+    src: require("assets/img/drone.jpg"),
     altText: "",
     caption: "",
   },
 ];
 const items2 = [
   {
-    src: require("assets/img/ethio3.jpg"),
+    src: require("assets/img/train.jpeg"),
     altText: "",
     caption: "",
   },
-  {
-    src: require("assets/img/ethio4.jpg"),
-    altText: "",
-    caption: "",
-  },
-  
 ];
 const items3 = [
   {
@@ -53,7 +48,7 @@ const items3 = [
     altText: "",
     caption: "",
   },
- 
+
   {
     src: require("assets/img/unsplash-clement-helardot.jpg"),
     altText: "",
@@ -72,12 +67,12 @@ const items4 = [
     altText: "",
     caption: "",
   },
- 
+
   {
     src: require("assets/img/gmail2.jpg"),
     altText: "",
     caption: "",
-  }
+  },
 ];
 const items5 = [
   {
@@ -85,12 +80,12 @@ const items5 = [
     altText: "",
     caption: "",
   },
- 
+
   {
     src: require("assets/img/planer2.png"),
     altText: "",
     caption: "",
-  }
+  },
 ];
 const items6 = [
   {
@@ -98,12 +93,12 @@ const items6 = [
     altText: "",
     caption: "",
   },
- 
+
   {
     src: require("assets/img/lalibela2.png"),
     altText: "",
     caption: "",
-  }
+  },
 ];
 function News() {
   // carousel states and functions
@@ -228,17 +223,19 @@ function News() {
                   </a>
                 </Carousel>
                 <p className="blockquote blockquote-info">
-                  "ቃና ቴሌቭዥን ኢትዮሳትን ተቀላቅሏል እስካሁን ድረስ ቃና ባለመኖሩ ብቻ ወደ ኢትዮሳት ማዞር
-                  ያልፈለጋችሁ በሙሉ አሁን ማዞር ትችላላችሁ ." <br></br>
+                  "ዕውቅና ሊሰጠው የሚገባ፣ በኢትዮጵያውያን ሕይወት/ኑሮ ላይ በጎ ተጽዕኖ ያሳረፈ የሳይንስ፣
+                  የቴክኖሎጂና ኢኖቬሽን የፈጠራ ሥራ ያበረከተ/ች ማነው/ማናት ይላሉ? ሲጠቅሱ፣ ያበረከቱትን
+                  አስተወዕፆና ስማቸውን በመጥቀስ አስተያየት መስጫው ላይ ያስፍሩልን ." <br></br>
                   <br></br>
-                  <small>Kana</small>
+                  <small>የፈጠራ ስራዎች</small>
                 </p>
               </Col>
               <Col className="ml-auto mr-auto" md="6">
-                <h2 className="title">አስደሳች ዜና</h2>
+                <h2 className="title">የፈጠራ ስራዎች ዜና</h2>
                 <h5 className="category">
-                  ቃና ቴሌቭዥን ኢትዮሳትን ተቀላቅሏል እስካሁን ድረስ ቃና ባለመኖሩ ብቻ ወደ ኢትዮሳት ማዞር
-                  ያልፈለጋችሁ በሙሉ አሁን ማዞር ትችላላችሁ
+                  ዕውቅና ሊሰጠው የሚገባ፣ በኢትዮጵያውያን ሕይወት/ኑሮ ላይ በጎ ተጽዕኖ ያሳረፈ የሳይንስ፣
+                  የቴክኖሎጂና ኢኖቬሽን የፈጠራ ሥራ ያበረከተ/ች ማነው/ማናት ይላሉ? ሲጠቅሱ፣ ያበረከቱትን
+                  አስተወዕፆና ስማቸውን በመጥቀስ አስተያየት መስጫው ላይ ያስፍሩልን
                 </h5>
                 <div
                   aria-multiselectable={true}
@@ -265,11 +262,152 @@ function News() {
                     <Collapse isOpen={collapses.includes(1)}>
                       <CardBody>
                         <p>
-                          በ HD እና በ SD ሪሲቨሮች ይሰራል <br />
-                          Frequency:- 11545 <br />
-                          Symbol rate:- 30000 <br /> Polarization :- Horizontal{" "}
-                          <br />
-                          ከላይ ያሉትን ቴክኒካዊ መረጃዎች በመጠቀም ማግኘት ትችላላችሁ .
+                          ዕውቅና ሊሰጠው የሚገባ፣ በኢትዮጵያውያን ሕይወት/ኑሮ ላይ በጎ ተጽዕኖ ያሳረፈ
+                          የሳይንስ፣ የቴክኖሎጂና ኢኖቬሽን የፈጠራ ሥራ ያበረከተ/ች ማነው/ማናት ይላሉ?
+                          ሲጠቅሱ፣ ያበረከቱትን አስተወዕፆና ስማቸውን በመጥቀስ አስተያየት መስጫው ላይ
+                          ያስፍሩልን .
+                        </p>
+                      </CardBody>
+                    </Collapse>
+                  </Card>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section">
+          <Container>
+            <Row>
+              <Col md="5">
+                <Carousel
+                  ride="carousel"
+                  interval={5000}
+                  activeIndex={activeIndex}
+                  next={next}
+                  previous={previous}
+                >
+                  <CarouselIndicators
+                    items={items1}
+                    activeIndex={activeIndex}
+                    onClickHandler={goToIndex}
+                  />
+                  {items1.map((item) => {
+                    return (
+                      <CarouselItem
+                        onExiting={onExiting}
+                        onExited={onExited}
+                        key={item.src}
+                      >
+                        <img
+                          src={item.src}
+                          alt={item.altText}
+                          className="d-block img-raised"
+                        />
+                      </CarouselItem>
+                    );
+                  })}
+                  <a
+                    className="carousel-control-prev"
+                    data-slide="prev"
+                    href="#pablo"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      previous();
+                    }}
+                    role="button"
+                  >
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      name="button"
+                      size="sm"
+                      type="button"
+                    >
+                      <i className="now-ui-icons arrows-1_minimal-left"></i>
+                    </Button>
+                  </a>
+                  <a
+                    className="carousel-control-next"
+                    data-slide="next"
+                    href="#pablo"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      next();
+                    }}
+                    role="button"
+                  >
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      name="button"
+                      size="sm"
+                      type="button"
+                    >
+                      <i className="now-ui-icons arrows-1_minimal-right"></i>
+                    </Button>
+                  </a>
+                </Carousel>
+                <p className="blockquote blockquote-info">
+                  "መነሻ ሀሳቡ እጅግ ዘመናዊ ከሆነውና ከኒው ጀርሲ ወደ ኒዮርክ ከተዘረጋው ባቡር የሆነ ባለ 40
+                  መቀመጫ ድሮን አውቶቢስ መሰራቱ ተነገረ፡፡ ይህም ሀሳብ በኮቪድ ምክንያት በሰዎች መካከል
+                  የሚፈለገውን አካላዊ ርቀት ለመጠበቅ በሚያስችል መልኩ የተጠነሰሰ ነው፡፡ መኪናው በራሪ እንዲሆን
+                  ታስቦ የተሰራ ሲሆን ካለበት ቦታ ሁሉ መነሳትና ማረፍ እንዲችል ተደርጎ የተሰራ ነው፡፡"{" "}
+                  <br></br>
+                  <br></br>
+                  <small>የፈጠራ ስራዎች</small>
+                </p>
+              </Col>
+              <Col className="ml-auto mr-auto" md="6">
+                <h2 className="title">40 መቀመጫ ያለው ድሮን አውቶቢስ</h2>
+                <h5 className="category">
+                  መነሻ ሀሳቡ እጅግ ዘመናዊ ከሆነውና ከኒው ጀርሲ ወደ ኒዮርክ ከተዘረጋው ባቡር የሆነ ባለ 40
+                  መቀመጫ ድሮን አውቶቢስ መሰራቱ ተነገረ፡፡ ይህም ሀሳብ በኮቪድ ምክንያት በሰዎች መካከል
+                  የሚፈለገውን አካላዊ ርቀት ለመጠበቅ በሚያስችል መልኩ የተጠነሰሰ ነው፡፡ መኪናው በራሪ እንዲሆን
+                  ታስቦ የተሰራ ሲሆን ካለበት ቦታ ሁሉ መነሳትና ማረፍ እንዲችል ተደርጎ የተሰራ ነው፡፡
+                </h5>
+                <div
+                  aria-multiselectable={true}
+                  className="card-collapse"
+                  id="accordion"
+                  role="tablist"
+                >
+                  <Card className="card-plain">
+                    <CardHeader id="headingOne" role="tab">
+                      <a
+                        aria-expanded={collapses.includes(1)}
+                        data-parent="#accordion"
+                        data-toggle="collapse"
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          changeCollapse(1);
+                        }}
+                      >
+                        Description{" "}
+                        <i className="now-ui-icons arrows-1_minimal-down"></i>
+                      </a>
+                    </CardHeader>
+                    <Collapse isOpen={collapses.includes(1)}>
+                      <CardBody>
+                        <p>
+                          በራሪ መኪናው በአራቱም አቅጣጫ የተገጠሙ ሁለት ሁለት በአጠቃላይ ስምንት ተሽከርከሪዎች
+                          (ፋኖ) ያሉት ሲሆን እነዚህም መኪናው የተሳካ በረራ እንዲያደርግና ወደ መሬት
+                          ለመውረድና ከመሬት ለመነሳት የሚያደርገውን እንቅስቃሴ እጅግ ቀላል የሚያደርጉለት
+                          ናቸው፡፡ የዚህ ፈጠራ ባለቤት የሆነው ኬሌኮና የተሰኘው የቴክኖሎጂ ድርጅት በራሪ
+                          አውቶቢሱ አሁን ላይ ያለውን የህዝብ ትራንስፖርት የሚፎካከርና ሊተካ የሚችል እንደሆነ
+                          ይፋ አድርጓል፡፡ ድርጅቱ አክሎም በ2023 አገልግሎት መስጠት ይጀምራል የተባለውን
+                          የኡበር የአየር ላይ ታክሲ የሚፎካከር እንደሆነም ገልጧል፡፡ ለዚህም በራሪ አውቶቢሱ
+                          በአንድ ጊዜ 40 ሰዎችን መጫን የሚችል መሆኑ እንደመተማመኛ ተወስዷል፡፡ እንደሚታወሰው
+                          ኡበር በአየር ላይ ታክሲው ከአብራሪው ሌላ አንድ ሰው ብቻ ለማጓጓዝ ያሰበ ነው፡፡
+                          እንደ ኒዩርክ ባሉ እጅግ በተጨናነቁ ከተሞች በአንዴ ያለምንም የመንገድ መጨናነቅ 40
+                          ሰዎችን ማጓጓዝ መቻሉ እጅግ ተመራጭ እንደሚያደርገው ይጠበቃል፡፡ በመጀመሪያው ዙር
+                          ድርጅቱ ከማንሃታን ወደ ሃምፕቶንስ የ30 ደቂቃ በረራን በ85 ዶላር ለማድረግ ያሰበ
+                          ሲሆን በቀጣይም ከቦስተን ወደ ኒዮርክ፣ ከዋሽንግተን ዲሲ ወደ ሎስ አንጀለስ እና
+                          ሳንፍራንንስኮ በረራውም የተሳካ እንዲሆን በሰዓት 3.6 ሜጋ ዋት ሀይልን የሚያመነጭ
+                          ባትሪን በልዩነት እንዳዘጋጀም ድርጅቱ ይፋ አድጓል፡፡ ይህ ሀይል ከፍተኛ ሲሆን
+                          በመቶዎች ወይም በሺዎች ለሚቆጠሩ ቤቶች አገልግሎት የሚውልን ሀይል የሚወዳደር ነው፡፡
+                          በድርጅቱ እቅድ መሰረት የእቃ ማጓጓዝ አገልግሎትን በ2022 የሚጀምር ሲሆን ሰዎችን
+                          ለማመላለስ 2024ን የቀጠሮ ቀን አስቀምጧል፡፡ ምንጭ techxplore.
                         </p>
                       </CardBody>
                     </Collapse>
@@ -353,21 +491,19 @@ function News() {
                   </a>
                 </Carousel>
                 <p className="blockquote blockquote-info">
-                  "የሀገራችን የቴሌቭዥን ጣቢያዎች ከጥር 13 በኋላ ቀድሞ በነበረው Nile Sat
-                  (Eutelsat)ልታገኙት አትችሉም ምክንያቱም አዲስ በመጣው ወደ ኢትዮ ሳት ስለሚገቡ ነው ስለዚህ
-                  እናንተም እነዚህ ከታች የሚዘረዘሩትን ቻናሎች እንዳይጠፉባችሁ ከፈለጋችሁ በጊዜ የዲሽ ሳህናችሁን
-                  ወደ ኢትዮ ሳት መቀየር አለባችሁ ." <br></br>
+                  በዓለም በቅርብ ጊዜ ከተጀመሩት መስኮች ውስጥ አንዱ የሆነው "ከፍተኛ የዳታ ሳይንስና ምልከታ" ላይ
+                  ያተኮረ ስልጠና በኢትዮጵያ መስጠት ተጀመረ። <br></br>
                   <br></br>
-                  <small>Kana</small>
+                  <small>ስልጠና በኢትዮጵያ</small>
                 </p>
               </Col>
               <Col className="ml-auto mr-auto" md="6">
-                <h2 className="title">አስደሳች ዜና</h2>
+                <h2 className="title">ስልጠና በኢትዮጵያ</h2>
                 <h5 className="category">
-                  የሀገራችን የቴሌቭዥን ጣቢያዎች ከጥር 13 በኋላ ቀድሞ በነበረው Nile Sat
-                  (Eutelsat)ልታገኙት አትችሉም ምክንያቱም አዲስ በመጣው ወደ ኢትዮ ሳት ስለሚገቡ ነው ስለዚህ
-                  እናንተም እነዚህ ከታች የሚዘረዘሩትን ቻናሎች እንዳይጠፉባችሁ ከፈለጋችሁ በጊዜ የዲሽ ሳህናችሁን
-                  ወደ ኢትዮ ሳት መቀየር አለባችሁ
+                  ስልጠናው የኢኖቬሽንና ቴክሎጂ ሚኒስቴር ከተባበሩት መንግስታት የዳታ ሳይንስ ቡድን ጋር በመተባበር
+                  ያዘጋጁት ነው። ከፍተኛ የዳታ ሳይንስና ምልከታ (Advanced data Science and
+                  Visualization) መስክ በዓለም በቅርብ ጊዜ ከተጀመሩት መስኮች አንዱ ሲሆን፣ ሀገራችንም
+                  ለጀመረቻቸው የተለያዩ የትኩረት መስኮች ውጤት የሚያግዝ መሆኑ ታምኖበት የተዘጋጀ ነው።
                 </h5>
                 <div
                   aria-multiselectable={true}
@@ -394,13 +530,18 @@ function News() {
                     <Collapse isOpen={collapses.includes(1)}>
                       <CardBody>
                         <p>
-                          ጥር 13 ከሚጠፉ ቻናሎች ውስጥ
-                          <br /> -EBC(Etv Zena , Etv Entertainment , Etv
-                          Languages) <br /> -Walta Tv
-                          <br /> -Fana Tv <br /> -Addis Tv ይገኙበታል::
-                          <br /> ከዚህ በተጨማሪ ደግሞ ኢትዮሳት ላይ የምታገኟቸው በርካታ ቻናሎች ሲኖሩ
-                          ከነዛም ውስጥ 24 ሰዓት በሙሉ ፊልም የሚታይበት EBS Cinema እና Sodere ቲቪ
-                          አለላችሁ.
+                          ስልጠናው ሀገራችን ለምታደርገው የዲጂታል ኢኮኖሚ ግንባታ ጉዞ ትልቅ ሚና ይጫወታል
+                          ተብሎም ተለይቷል። በተለይ የዲጂታል ትራንስፎርሜሽን ስትራቴጂ ስኬት እንዲሁም በሰው
+                          ሰራሽ አስተውሎ ዘርፍ አቅም በመገንባት ረገድ አስተዋዕጾው ከፍተኛ እንደሚሆን
+                          ይጠበቃል፡፡ የኢኖቬሽንና ቴክኖሎጂ ሚኒስቴር የዲጂታል ትራንስፎርሜሽን ፕሮግራም
+                          ዳይሬክተር ጀነራል አብዮት ባዩ (ፒ ኤች ዲ) በስልጠናው መከፈቻ ላይ "ስልጠናው
+                          ኢትዮጵያ በዘርፉ የሰለጠኑ ሰዎች እንዲኖራትና ከዘርፉ ተጠቃሚ እንድትሆን የሚያስችል
+                          መሆኑን ተናግረዋል። የኢንተርኔት ሶሳይቲ የአፍሪካ ክልል ምክትል ፕሬዝዳንት ዳዊት
+                          በቀለ (ፒ ኤች ዲ) በኢትዮጵያ እንዲህ ያለ ስልጠና ሲሰጥ የመጀመሪያው እንደሆነና
+                          ቀጣይነት ባለው መልኩ እንደሚሰጥ ተናገዋል። በበይነ መረብ የሚሰጠው ስልጠና ለዐሥር
+                          ተከታታይ ሳምንታት የሚቆይ ሲሆን፣ ከከፍተኛ ትምህርት ተቋማት፣ ከመንግስት
+                          መሥሪያቤቶች፣ በዘርፉ ከተሰማሩ የግል የቴክኖሎጂ ተቋማት እንዲሁም ጀማሪ የቴክኖሎጂ
+                          ድርጅቶች (Startups) የተውጣጡና መመዘኛውን ያለፉ 55 ሠልጣኞች ይሳተፉበታል።
                         </p>
                       </CardBody>
                     </Collapse>
@@ -945,22 +1086,24 @@ function News() {
                         <p>
                           የላሊበላ ግሎባል ኔትወርክስ ድርጅት ተባባሪ መስራችና ዋና ሥራ አስፈጻሚ የሆኑት
                           ኢትዮጵያዊቷ ውለታ ለማ (ዶ/ር) ዓለም አቀፉን ቴክኖሎጂን መሠረት ያደረገ አዲስ የሥራ
-                          ፈጣራ ውድድር አሸነፉ። <br/>ኢትዮጵያዊቷ በየዓመቱ የሚካሄደውን ዓለም አቀፉን ፒአይቲሲኤች
-                          (PITCH) አዲስ የሥራ ፈጠራ ውድድር በትላንትናው እለት ማሸነፉቸው ይፋ ሆኗል።<br/>
+                          ፈጣራ ውድድር አሸነፉ። <br />
+                          ኢትዮጵያዊቷ በየዓመቱ የሚካሄደውን ዓለም አቀፉን ፒአይቲሲኤች (PITCH) አዲስ የሥራ
+                          ፈጠራ ውድድር በትላንትናው እለት ማሸነፉቸው ይፋ ሆኗል።
+                          <br />
                           በውድድሩ 2500 ሥራ ፈጣሪዎች የተሳተፉ ሲሆን ወደ መጨረሻው ዙር ያለፉት ደግሞ 700
                           የሚሆኑ አዲስ ፈጣሪዎች ነበሩ። ከዚህ ውስጥ ኢትዮጵያዊቷ ውለታ ለማ(ዶ/ር) በጤና
                           ቴክኖሎጂ ዘርፍ ያቀረቡት አዲስ የሥራ ፈጠራ በቅርበት ተፎካካሪ ከነበሩት የአሜሪካና
-                          የእንግሊዝ የሥራ ፈጣሪዎችን በመብለጥ የዓመቱ ውድድር አሸናፊ ሆኗል። <br/>ውለታ ለማ
-                          (ዶ/ር) ለውድድሩ ያቀረቡት የሥራ ፈጠራ አባይ ሲ ኤች አር (ABAY CHR) የተባለ
-                          በኢትዮጵያም ሆነ በአፍሪካ ህክምና ዘርፍ ያለውን ሰፊ የወረቀት ስራ ወደ ዲጂታል
-                          በመቀየር ሥራን የሚያቀልና የሚያቀላጥፍ እንዲሁም ከፍተኛ የውጭ ምንዛሪ ወጪን
-                          የሚያስቀር የሥራ ፈጠራ ነው ተብሏል። " የአፍሪካን የጤና ዘርፍ ስርዓት ለማዘመን
-                          ለ28 ዓመታት ሰርቻለሁ ፤ እናም ውድድሩን በማሸነፌ በጣም ተደስቻለሁ" ሲሉ ውለታ ለማ
-                          (ዶ/ር) ተናግረዋል። <br/>የላሊበላ ግሎባል ኔትወርክስ ዋና ሥራ አስፈጻሚና ተባባሪ መሥራች
-                          የሆኑት ውለታ ለማ (ዶ/ር) በውድድሩ አሸናፊ የሆነው የፈጠራ ሀሳብ በአፍሪካ ሀገራት
-                          ያለውን የህክምና ዘርፍ የመረጃ አያያዝ ስርዓት እንደሚቀይርና በዚህም በርካታ የአፍሪካ
-                          አገራት የተቀረው ዓለም የሚጠቀመውን ዘመናዊ የመረጃ አያያዝ ስርዓት መጠቀም
-                          ያስችላቸዋል ብለዋል።
+                          የእንግሊዝ የሥራ ፈጣሪዎችን በመብለጥ የዓመቱ ውድድር አሸናፊ ሆኗል። <br />
+                          ውለታ ለማ (ዶ/ር) ለውድድሩ ያቀረቡት የሥራ ፈጠራ አባይ ሲ ኤች አር (ABAY
+                          CHR) የተባለ በኢትዮጵያም ሆነ በአፍሪካ ህክምና ዘርፍ ያለውን ሰፊ የወረቀት ስራ
+                          ወደ ዲጂታል በመቀየር ሥራን የሚያቀልና የሚያቀላጥፍ እንዲሁም ከፍተኛ የውጭ ምንዛሪ
+                          ወጪን የሚያስቀር የሥራ ፈጠራ ነው ተብሏል። " የአፍሪካን የጤና ዘርፍ ስርዓት
+                          ለማዘመን ለ28 ዓመታት ሰርቻለሁ ፤ እናም ውድድሩን በማሸነፌ በጣም ተደስቻለሁ" ሲሉ
+                          ውለታ ለማ (ዶ/ር) ተናግረዋል። <br />
+                          የላሊበላ ግሎባል ኔትወርክስ ዋና ሥራ አስፈጻሚና ተባባሪ መሥራች የሆኑት ውለታ ለማ
+                          (ዶ/ር) በውድድሩ አሸናፊ የሆነው የፈጠራ ሀሳብ በአፍሪካ ሀገራት ያለውን የህክምና
+                          ዘርፍ የመረጃ አያያዝ ስርዓት እንደሚቀይርና በዚህም በርካታ የአፍሪካ አገራት የተቀረው
+                          ዓለም የሚጠቀመውን ዘመናዊ የመረጃ አያያዝ ስርዓት መጠቀም ያስችላቸዋል ብለዋል።
                         </p>
                       </CardBody>
                     </Collapse>
